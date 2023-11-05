@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Fields</title>
+    <link rel="stylesheet" href="body.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="mt-4">Enter Field Key and Value</h2>
+        <div class="input-fields mt-3">
+            <!-- Add initial key-value input fields -->
+            <div class="input-field">
+                <input type="text" class="form-control key" placeholder="Field Key">
+                <input type="text" class="form-control value" placeholder="Field Value">
+            </div>
+
+            <!-- Add a container for dynamically added key-value pairs -->
+            <div id="additionalFieldsContainer"></div>
+        </div>
+        <div class="button-container">
+            <button id="addField" class="btn btn-primary">Add Field</button>
+            <button id="sendData" class="btn btn-success">Send Data</button>
+        </div>
+        <div id="fieldsContainer" class="mt-4"></div>
+    </div>
+    <script src="function.js"></script>
+</body>
+</html>
